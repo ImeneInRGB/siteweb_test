@@ -1,10 +1,10 @@
-package com.kodemade.notes;
+package com.kuikops.notes;
 
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/notes")
 public class NoteController {
     private List<Map<String, String>> notes = new ArrayList<>();
