@@ -27,7 +27,7 @@ pipeline {
               
                 dir('frontend') { 
                     sh 'npm install'
-                    sh 'npm run test -- --watch=false --browsers=ChromeHeadless'
+                    sh 'npm run test'
                     sh 'npm run build'
                 }
             }
