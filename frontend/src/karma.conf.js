@@ -40,7 +40,7 @@ module.exports = function (config) {
         flags: ['--no-sandbox', '--disable-setuid-sandbox']
       }
     },
-    singleRun: true, // IMPORTANT : Jenkins s'arrête après le test
+    singleRun: true, 
     restartOnFileChange: false
     // ----------------------------------------------------
   });
