@@ -11,7 +11,7 @@ module.exports = function (config) {
     ],
     client: {
       jasmine: {
-        e
+        // Supprimé : la lettre "e" qui traînait ici
       },
       clearContext: false
     },
