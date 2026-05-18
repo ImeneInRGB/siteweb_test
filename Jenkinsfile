@@ -42,7 +42,7 @@ pipeline {
             steps {
            
                 dir('backend') { 
-                    sh 'mvn clean test'
+                    sh 'mvn clean package -Dmaven.repo.local=/tmp/.m2'
                     sh 'mvn package -DskipTests'
                 }
             }
