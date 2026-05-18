@@ -27,7 +27,8 @@ pipeline {
                 
                 dir('frontend') { 
                     sh 'npm install'
-                    // On définit la variable CHROME_BIN pour indiquer le chemin de Chromium à Karma
+                    
+                    // On pointe sur le Chromium minimal qu'on vient d'installer sur Ubuntu
                     withEnv(["CHROME_BIN=/usr/bin/chromium-browser"]) {
                         sh 'npm run test'
                     }
