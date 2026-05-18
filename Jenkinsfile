@@ -27,7 +27,10 @@ pipeline {
                 
                 dir('frontend') { 
                     sh 'npm install'
-                    sh 'npm run test'
+                    // On définit la variable CHROME_BIN pour indiquer le chemin de Chromium à Karma
+                    withEnv(["CHROME_BIN=/usr/bin/chromium-browser"]) {
+                        sh 'npm run test'
+                    }
                     sh 'npm run build'
                 }
             }
