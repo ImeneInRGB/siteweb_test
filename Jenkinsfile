@@ -33,7 +33,7 @@ pipeline {
                     withEnv(["CHROME_BIN=/opt/chrome/chrome"]) {
                         sh 'npm run test'
                     }
-                    sh 'npm run build'
+                    sh 'npx ng build --configuration development'
                 }
             }
         }
