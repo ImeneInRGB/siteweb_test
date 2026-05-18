@@ -3,7 +3,7 @@ pipeline {
     
     tools {
         
-        nodejs 'nodejs-18'
+        nodejs 'Node-24.15.0'
         maven 'maven-3'
         jdk 'jdk-17'
     }
