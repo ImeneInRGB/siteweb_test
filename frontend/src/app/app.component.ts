@@ -37,7 +37,7 @@ import { FormsModule } from '@angular/forms';
     .note h3 { color: #882173; margin: 0; }
   `]
 })
-export class App implements OnInit {
+export class AppComponent implements OnInit {
   notes: any[] = [];
   newTitle = '';
   newContent = '';
