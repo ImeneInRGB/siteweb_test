@@ -1,7 +1,12 @@
 pipeline {
     agent any
     
-  
+  tools {
+        
+        nodejs 'Node-24.15.0'
+        maven 'Maven-3.9.15'
+        jdk 'JDK 25.0.3'
+    }
 
     stages {
         stage('Checkout') {
