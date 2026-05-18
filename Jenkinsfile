@@ -29,7 +29,8 @@ pipeline {
                     sh 'npm install'
                     
                     // On pointe sur le Chromium minimal qu'on vient d'installer sur Ubuntu
-                    withEnv(["CHROME_BIN=/usr/bin/chromium-browser"]) {
+                    // et je pointe sur le nouveau binaire hors-snap super léger
+                    withEnv(["CHROME_BIN=/opt/chrome/chrome"]) {
                         sh 'npm run test'
                     }
                     sh 'npm run build'
